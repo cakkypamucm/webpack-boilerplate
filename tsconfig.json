@@ -1,0 +1,15 @@
+{
+    "extends": "@tsconfig/recommended/tsconfig.json",
+    "compilerOptions": {
+        "moduleResolution": "bundler",
+        "module": "es2022",
+        "target": "es2022",
+        "allowJs": true,
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "paths": {
+            "@/*": ["./src/*"]
+        }
+    },
+    "include": ["src/**/*.ts", "src/**/*.vue"]
+}

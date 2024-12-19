@@ -1,0 +1,9 @@
+@use "normalize.css";
+@use "@fontsource/roboto-slab/scss/mixins" as RobotoSlab;
+
+// font-display default value is swap, so change it to "fallback" to prevent FOUC
+@include RobotoSlab.faces($display: fallback);
+
+body {
+    font-family: "Roboto Slab", serif;
+}

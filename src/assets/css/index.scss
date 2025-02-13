@@ -1,0 +1,15 @@
+@use "normalize.css";
+@use "@fontsource/roboto-slab/scss/mixins" as RobotoSlab;
+
+@include RobotoSlab.faces(
+    $subsets: (
+        cyrillic,
+        cyrillic-ext,
+        latin,
+        latin-ext
+    )
+);
+
+body {
+    font-family: "Roboto Slab", serif;
+}
